@@ -32,7 +32,7 @@ class UnknownAlgorithmsTests: XCTestCase {
     func testProblem2ModeIsCorrect() {
         let problem = Problems()
         let array = [1,1,2,2,2,2,3,4,5,5]
-        let expected = 2.0
+        let expected : Float = 2.0
         let actual = problem.problem2(array)
         XCTAssertEqual(actual, expected)
     }
