@@ -17,16 +17,15 @@ class UnknownAlgorithmsTests: XCTestCase {
         XCTAssertEqual(actual, expected)
     }
     
-    func testArrayOf1Or0ItemsReturnsCorrectly() {
+    func testArrayOf1And0ItemsReturnsCorrectly() {
         let problem = Problems()
         let array = [1]
         let expected = 2
         let actual = problem.problem1(array)
         XCTAssertEqual(actual, expected)
-        let array2 = []
+        let array2 : [Int] = []
         let expected2 = 0
-        let actual2 = problem.problem1(array)
+        let actual2 = problem.problem1(array2)
         XCTAssertEqual(actual2, expected2)
     }
-
 }

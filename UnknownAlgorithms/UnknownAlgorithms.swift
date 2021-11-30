@@ -15,7 +15,7 @@ class Problems {
         } else if array.count == 1 {
             return (array[0] * 2)
         } else {
-            return (array[0] * ((array.count)-1))
+            return (array[0] * array[(array.count)-1]
         }
     }
     
