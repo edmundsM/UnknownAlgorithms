@@ -28,4 +28,12 @@ class UnknownAlgorithmsTests: XCTestCase {
         let actual2 = problem.problem1(array2)
         XCTAssertEqual(actual2, expected2)
     }
+    
+    func testProblem2ModeIsCorrect() {
+        let problem = Problems()
+        let array = [1,1,2,2,2,2,3,4,5,5]
+        let expected = 2.0
+        let actual = problem.problem2(array)
+        XCTAssertEqual(actual, expected)
+    }
 }
